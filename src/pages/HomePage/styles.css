@@ -1,17 +1,15 @@
 .HomePage {
   height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  height: 150vh;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .prayertimescard {
   opacity: 80%;
   margin-top: 5rem;
   display: flex;
-  width: 40rem;
 }
 
 .CardContent {
@@ -38,6 +36,14 @@
   flex-direction: column;
 }
 
+.hadith {
+  text-align: center;
+}
+
 .PrayerTime p {
   font-size: 35px;
+}
+
+.hadithTitle {
+  font-size: 23px;
 }

@@ -24,22 +24,13 @@ function Navbar() {
           </NavLink>
           <NavLink
             className="links"
-            to="/shop"
+            to="/prayer"
             style={({ isActive }) =>
               isActive ? { color: "lightgrey" } : undefined
             }
           >
-            Shop
-          </NavLink>
-          <NavLink
-            className="links"
-            to="/details/:id"
-            style={({ isActive }) =>
-              isActive ? { color: "lightgrey" } : undefined
-            }
-          >
-            About
-          </NavLink>
+            Prayer
+          </NavLink>{" "}
         </div>
       </div>
       <div className="nav-right">
