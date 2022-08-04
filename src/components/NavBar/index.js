@@ -2,14 +2,15 @@ import { NavLink } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import { BsCart2 } from "react-icons/bs";
 import { FiHeart } from "react-icons/fi";
+import logo from "./IH.png";
 import "./styles.css";
 
 function Navbar() {
   return (
-    <div className="container">
+    <div className="navcontainer">
       <div className="nav-left">
         <NavLink to="/">
-          {/* <img className="nav-logo" src={logo} alt="" /> */}
+          <img className="nav-logo" src={logo} alt="" />
         </NavLink>
         <div className="nav-links">
           <NavLink
