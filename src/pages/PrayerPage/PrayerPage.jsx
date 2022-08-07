@@ -14,16 +14,21 @@ export default function PrayerPage () {
   // }, [dispatch, BTC]);
   return ( 
     <div className="HomePage" style={{ backgroundImage: `url(${Quran})` }}>
-            <Card text="white" bg="dark" style={{ width: "70rem", height: "16.5rem", color: "black" }} className="prayertimescard">
+            <Card text="white" bg="dark" style={{ width: "70rem", height: "16.5rem", color: "black" }} className="prayertimescard"> 
     <Card.Body>
-     Bismillah  (when you start)
-
-Allahou akbar (both hands up next to ears and then back together. Right arm over left and looking at the ground to be humble)
-
-A3udoe billahi miena sheytan irradjiem
-(I seek refuge with Allah from the cursed satan)
-
-(Surah Al Fatiha, ALWAYS start your prayer with this)
+    <Card.Text>
+ <ol>
+<li>
+<strong>Bismillah</strong> (before you start)
+</li>
+<li>
+<strong>Allahou akbar</strong> (Put both hands up next to ears and then back together. Right arm over left and look at the ground)
+</li>
+<li>
+<strong>A3udoe billahi miena sheytan irradjiem</strong> (I seek refuge with Allah from the cursed satan)
+</li>
+<li>
+(Surah Al Fatiha, you ALWAYS start with this Surah)
 
 Bismillahi rahmani raheem. In the name of Allah, the Most Merciful, the Most Merciful.
 
@@ -40,6 +45,9 @@ Ihdina sirata al mustaqim                         Lead us on the s
 Sirata ladina an-3amta 3aleyhim     Ghayril ma'dobi 3aleyhim wa ladalin  The Path of those on whom You have bestowed favors, not of those upon whom the wrath rests and not that of the erring.
 
 Amin
+</li>
+</ol>   
+</Card.Text>
 </Card.Body></Card>
 </div>
   )
