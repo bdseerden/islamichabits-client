@@ -5,9 +5,12 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BsGrid1X2 } from "react-icons/bs";
 import { MdLocationOn } from "react-icons/md"
+import { useState } from "react";
 
 export default function HomePage () {
+  const [changeLocationMode, setChangeLocationMode] = useState(false);
   const dispatch = useDispatch();
+  
 
 
   // useEffect(() => {
@@ -26,7 +29,7 @@ export default function HomePage () {
       </Card.Body>
       </Card>
       <Card text="white" bg="dark" style={{ width: "70rem", height: "15rem", color: "black" }} className="prayertimescard">
-      <Card.Header className="CardHeader"><h1>Prayer Times</h1><button className="location"><MdLocationOn/>Tilburg</button></Card.Header>
+      <Card.Header className="CardHeader"><h1>Prayer Times</h1>{!changeLocationMode ? <button onClick={() => setChangeLocationMode(true)} className="location"><MdLocationOn/>Tilburg, Netherlands</button> : <><button onClick={() => setChangeLocationMode(false)} className="location"><MdLocationOn/></button><input></input></>}</Card.Header>
       <Card.Body className="CardContent">
       <div className="PrayerTime">  
       <h3>Fajr</h3>

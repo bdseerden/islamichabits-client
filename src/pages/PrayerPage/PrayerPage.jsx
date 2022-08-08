@@ -29,7 +29,7 @@ export default function PrayerPage () {
 </li>
 <li>
 (Surah Al Fatiha, you ALWAYS start with this Surah)
-
+<ul></ul>
 Bismillahi rahmani raheem. In the name of Allah, the Most Merciful, the Most Merciful.
 
 Alhamdoulilahi rabbi-al 3alamin          Praise be to Allah, the Lord of the Worlds.
